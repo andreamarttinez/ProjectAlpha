@@ -4,50 +4,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=League+Gothic&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <title>Project Alpha</title>
     </head>
 
     <body>
         <header>
-            <h1>SJ Design</h1>
-            <nav>
-                <ul>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#Blog">Blog</a></li>
-                </ul>
-            </nav>
-            <button><a href="#">Let's Talk</a></button>
+            <div class="top-up">
+                <div class="logo">
+                    <a href="#"><h1>S<span class="color-red">J Design</span></h1></a>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                    </ul>
+                </nav>
+                <button class="top-btn"><a href="#">Let's Talk</a></button>
+            </div>
+            <div class="header-container">
+                <div class="welcome">
+                    <h1>UX Designer</h1>
+                    <h2>Hi There, I'm <br> <span class="color-red">Sarah Jones</span></h2>
+                    <p>Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together.</p>
+                    <div class="welcome-btn">
+                        <button><a href="#">Hire Me</a></button>
+                        <button class="white-btn"><a href="#">Portfolio</a></button>
+                    </div>
+                </div>
+                <img src="images/sarah.png" alt="Sarah Jones">
+            </div>
+
         </header>
 
         <main>
-            <section id="Home">
-                <h1>UX Designer</h1>
-                <h2>Hi There, <span>I'm Sarah Jones</span></h2>
-                <p>Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together.</p>
-                <button><a href="#">Hire Me</a></button>
-                <button><a href="#">Portfolio</a></button>
-                <img src="images/sarah.png" alt="Sarah Jones">
-            </section>
-
-    
-            <section id="About">
-                <h3>About me</h3>
-                <p>I'm Sarah Jones, a UX/UI designer dedicated to crafting intuitive and visually stunning digital experiences. With a person for user-centric design,
-                I transform ideas into functional and beautiful interfaces. Let's collaborate and shape the future of design together.</p>
-                <dl>
-                    <dt>502</dt>
-                    <dd>Projects Done</dd>
-                </dl>
-                <dl>
-                    <dt>10+</dt>
-                    <dd>Years of Experience</dd>
-                </dl>
-                <dl>
-                    <dt>273+</dt>
-                    <dd>Clients Served</dd>
-                </dl>
+            <section class="About">
+                <div class="About-info">
+                    <h3>About me</h3>
+                    <p>I'm Sarah Jones, a UX/UI designer dedicated to crafting intuitive and visually stunning digital experiences. With a person for user-centric design,
+                    I transform ideas into functional and beautiful interfaces. Let's collaborate and shape the future of design together.</p>
+                </div>
+                <div class="About-list">
+                    <dl>
+                        <dt>502</dt>
+                        <dd>Projects Done</dd>
+                    </dl>
+                    <dl>
+                        <dt>10+</dt>
+                        <dd>Years of Experience</dd>
+                    </dl>
+                    <dl>
+                        <dt>273+</dt>
+                        <dd>Clients Served</dd>
+                    </dl>
+                </div>
             </section>
             
             <section id="Services">

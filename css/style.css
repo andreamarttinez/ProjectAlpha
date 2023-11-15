@@ -1,0 +1,172 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Start of header styles*/
+header {
+    background-color: #efd2d0;
+}
+
+.top-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 124px;
+    margin-right: 124px;
+}
+
+.logo h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo h1 span {
+    margin-left: -6px;
+}
+
+.color-red {
+    color: red; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+.nav-list a:hover {
+    color:white;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-btn {
+    background-color: black;
+    width: 127px;
+    height: 48px;
+    border: 1px solid black; 
+    font-size: 16px; 
+    font-weight: 500;
+}
+
+.top-btn a {
+    color: white;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    width: 457px; 
+    margin-left: 124px;
+    margin-top: 34px;
+}
+
+.welcome h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.welcome h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 16px; 
+    margin-bottom: 16px;
+}
+
+.welcome-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+}
+
+.welcome-btn button {
+    width: 177px;
+    height: 48px;
+    border: 1px solid black; 
+    background-color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.welcome-btn a{
+    color: white; 
+}
+
+.welcome-btn .white-btn {
+    background-color: white; 
+}
+
+.white-btn a {
+    color: black;
+}
+
+header img {
+    margin-left: auto; 
+    width: 687px;
+   margin-right: 124px;
+}
+/*End of header styles*/
+
+/*Start of About styles*/
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.About-info {
+    margin-top: 64px;
+  /*max-width: 810px; */
+}
+
+.About h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.About-info p {
+    font-size: 16px;
+}
+
+.About-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px 124px 80px 124px ; 
+}
+
+.About-list dl { 
+    margin: 0;
+}
+
+.About-list dt {
+    font-size: 64px;
+    font-weight: 700;
+    color: #efd2d0; 
+}
+
+.About-list dd {
+    margin-inline-start: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*End of About styles*/
