@@ -1,5 +1,38 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0; 
+    overflow-x: hidden;
+}
+
+/*General styles*/
+
+/*Red texts*/
+.color-red { 
+    color: red; 
+}
+
+/*Sections info*/
+.info {
+    text-align: center;
+    margin-top: 64px; 
+    /* max-width: 810px;  */
+}
+
+/*h3*/
+.info__title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/*info p styles*/
+.info__description {
+    font-size: 16px;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: black; 
 }
 
 /*Start of header styles*/
@@ -7,13 +40,13 @@ header {
     background-color: #efd2d0;
 }
 
-.top-up {
+.header__top-up {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-left: 124px;
-    margin-right: 124px;
+    margin-right: 124px; 
 }
 
 .logo h1 {
@@ -26,8 +59,14 @@ header {
     margin-left: -6px;
 }
 
-.color-red {
-    color: red; 
+.header__circle {
+    position: absolute; 
+    margin-left: 281px; 
+    margin-top: -88px; 
+    width: 146px; 
+    height: 146px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 .nav-list {
@@ -35,24 +74,14 @@ header {
     display: flex;
 }
 
-.nav-list li {
+.nav-list__item {
     padding: 16px;
     font-size: 18px;
     font-weight: 600;
 }
 
-a {
-    text-decoration: none;
-    color: black; 
-}
-
 .nav-list a:hover {
     color:white;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: row;
 }
 
 .top-btn {
@@ -64,8 +93,13 @@ a {
     font-weight: 500;
 }
 
-.top-btn a {
+.top-btn__link {
     color: white;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
 }
 
 .welcome {
@@ -76,25 +110,25 @@ a {
     margin-top: 34px;
 }
 
-.welcome h1 {
+.welcome__title {
     font-size: 20px;
     font-weight: 400;
 }
 
-.welcome h2 {
+.welcome__subtitle {
     font-size: 48px;
     font-weight: 700;
     margin-top: 16px; 
     margin-bottom: 16px;
 }
 
-.welcome-btn {
+.welcome__buttons {
     display: flex;
     flex-direction: row;
     margin-top: 48px;
 }
 
-.welcome-btn button {
+.welcome__button {
     width: 177px;
     height: 48px;
     border: 1px solid black; 
@@ -104,19 +138,19 @@ a {
     margin-right: 16px;
 }
 
-.welcome-btn a{
+.welcome__button a{
     color: white; 
 }
 
-.welcome-btn .white-btn {
+.welcome__button--white {
     background-color: white; 
 }
 
-.white-btn a {
+.welcome__button--white a {
     color: black;
 }
 
-header img {
+.header__img {
     margin-left: auto; 
     width: 687px;
    margin-right: 124px;
@@ -124,7 +158,7 @@ header img {
 /*End of header styles*/
 
 /*Start of About styles*/
-.About {
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,40 +167,249 @@ header img {
     color: white;
 }
 
-.About-info {
-    margin-top: 64px;
-  /*max-width: 810px; */
-}
-
-.About h3 {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.About-info p {
-    font-size: 16px;
-}
-
-.About-list {
+.about__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 32px 124px 80px 124px ; 
 }
 
-.About-list dl { 
+.about__data { 
     margin: 0;
 }
 
-.About-list dt {
+.about__data--title {
     font-size: 64px;
     font-weight: 700;
     color: #efd2d0; 
 }
 
-.About-list dd {
+.about__data--description {
     margin-inline-start: 0;
     font-size: 18px;
     font-weight: 700;
 }
 /*End of About styles*/
+
+/*Start of Services styles*/
+.services { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px 124px 80px 124px ; 
+    list-style: none;
+}
+
+.services__item {
+    width: 274px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 30px;
+}
+
+.services__item--icon {
+    height: 54px;
+}
+
+.services__item--title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.services__item--description {
+    font-size: 14px;
+    font-weight: 400;
+}
+/*End of Services styles*/
+
+/*Start of Portfolio styles*/
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #efd2d0;
+}
+
+.portfolio__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 64px 124px; 
+}
+
+.portfolio__list img {
+    height: 198px;
+}
+/*End of Portfolio styles*/
+
+/*Start of Skills styles*/
+.skills__data {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 64px 124px 90px 124px; 
+}
+
+.skills__list {
+    display: flex; 
+    flex-direction: column;
+    list-style: none;
+    width: 472px;
+}
+
+.skills__label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skills__bar {
+    display: flex; 
+    align-items: center;
+}
+
+.skills__progress {
+    width: 400px;
+    height: 5px;
+    margin: 16px 0px; 
+}
+
+.skills__progress[value] {
+    appearance: none;
+}
+
+.skills__progress[value]::-webkit-progress-value {
+    background-color: #1f1f1f;
+}
+
+.skills__progress[value]::-webkit-progress-bar {
+    background-color: #e1e1e1;
+}
+
+.skills__progress--percentage {
+    font-size: 16px; 
+    font-weight: 600;
+    margin-left: 16px;
+}
+/*End of Skills styles*/
+
+/*Start of Contact styles*/
+.contact {
+    background-color: #efd2d0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 124px;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    width: 566px; 
+}
+
+.contact__list {
+    list-style: none;
+    padding: 0px; 
+}
+
+.contact__item {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__item--icon {
+    margin-right: 16px;
+}
+
+.contact__rrss {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px; 
+}
+
+.contact__rrss--link { 
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__rrss--icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact__form input[type="text"], input[type="email"], input[type="tel"] {
+    width: 534px;
+    height: 17px;
+    border: none; 
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 16px;
+}
+
+.contact__form textarea {
+    width: 534px;
+    height: 136px;
+    border: none;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 16px;
+}
+
+.contact__form input[type="submit"] {
+    display: block;
+    width: 233px;
+    height: 48px;
+    margin-top: 32px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*End of Contact styles*/
+
+/*Start of Footer styles*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: black;
+    color: white; */
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
